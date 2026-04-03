@@ -10,8 +10,15 @@ s=pd.Series([10,20,30,40,50])
 
 print(s.dtype)
 
-s.name="nums"
+s.name="calories"
 print(s.values)
+print(s[0:3])
+print(s.iloc[3])
+print(s.iloc[[1,3,4]])
+index=["apple","banana","grapes","oranges","mango"]
+s.index=index
+print(s)
+
 
 
  
