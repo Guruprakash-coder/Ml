@@ -18,6 +18,9 @@ print(s.iloc[[1,3,4]])
 index=["apple","banana","grapes","oranges","mango"]
 s.index=index
 print(s)
+print(s[0]+s['apple'])
+print(s['apple':'banana'])
+print(s.loc[['grapes','apple']])
 
 
 
