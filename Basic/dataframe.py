@@ -27,3 +27,9 @@ print(df.info())
 print(df.describe())
 df["Salary"]=df["Salary"]+5000
 print(df)
+df.rename(columns={"Department":"Dept"},inplace=True)
+print(df["Salary"].unique())
+c=df["Dept"].value_counts()
+print(c)
+df["PromotedSalary"]=df["Salary"]*10
+print(df)
