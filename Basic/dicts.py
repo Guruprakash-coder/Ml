@@ -18,4 +18,9 @@ fruit_protein={
     "Cherries": 1.0
     }
 s=pd.Series(fruit_protein,name='protein')
+print(s>1)
+print(s[s>1])
+
+print(s[(s>0.5) & (s<2.0)])
+s["mango"]=1.8
 print(s)
