@@ -15,6 +15,15 @@ data = {
 "Salary": [50000, 60000, 70000, 62000, np.nan, 50000]
 }
 df = pd.DataFrame(data)
+
+print(df["Age"])
+
+#print(df.iloc[1:3])
+#print(df.loc[1:3,["Age","Department"]])
+df.drop("Age",axis=1)#give inplace=True as another arguement to make changes in original data frame
 print(df)
-print(df.iloc[1:3])
-print(df.loc[1:3,["Age","Department"]])
+print(df.shape)
+print(df.info())
+print(df.describe())
+df["Salary"]=df["Salary"]+5000
+print(df)
